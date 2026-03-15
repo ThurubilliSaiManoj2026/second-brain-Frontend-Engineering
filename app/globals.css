@@ -1,26 +1,52 @@
+/* Tailwind v4 uses @import instead of @tailwind directives */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  /* Universal reset — removes all default margins, padding,
+     borders and outlines that browsers add by default.
+     The border: 0 is critical — it eliminates the thin white
+     line that flickers during scroll, caused by subpixel border
+     rendering conflicts between the GPU and CPU compositor. */
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* scroll-behavior: smooth makes ALL programmatic scrolls
+     animate using the browser native smooth scroll — zero JS
+     cost, handled entirely by the compositor thread. */
+  html {
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    /* Prevents subpixel antialiasing issues on webkit that
+       can cause thin lines to appear during scroll repaints */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Explicit reset for main — prevents browser defaults
+     from creating visible lines or borders between sections */
+  main {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #0a0a0a;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: #0a0a0a; }
+  ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
 }
