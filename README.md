@@ -17,13 +17,7 @@
 
 ---
 
-## 📸 Screenshots
-
-| Landing Page | Dashboard | AI Chat |
-|---|---|---|
-| Dark hero with parallax animations | 3-column knowledge grid with filters | Conversational Q&A with cited sources |
-
-> **Live Demo:** Visit [second-brain-frontend-engineering.vercel.app](https://second-brain-frontend-engineering.vercel.app) to see the full application in action.
+> **Live Demo:** Visit [second-brain-frontend-engineering.vercel.app](https://second-brain-frontend-engineering.vercel.app) to see the full application in production.
 
 ---
 
@@ -308,7 +302,7 @@ MIT License — feel free to use this project as a reference or starting point f
 
 ---
 
-## 👤 Author
+## Author
 
 **Thurubilli Sai Manoj**
 
