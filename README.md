@@ -1,4 +1,4 @@
-# 🧠 Second Brain — AI-Powered Knowledge System
+# 🧠 Second Brain — AI Powered Knowledge System
 
 <div align="center">
 
@@ -27,7 +27,7 @@
 
 ---
 
-## ✨ What is Second Brain?
+## What is Second Brain?
 
 Second Brain is a full-stack, AI-powered knowledge management platform built as part of the Altibbe/Hedamo technical assessment. It goes beyond a simple note-taking app — it is an **intelligent infrastructure for thought**. Users capture insights, articles, and ideas in one place, then use AI to summarize content, automatically tag entries, and query their entire knowledge base conversationally.
 
@@ -35,7 +35,7 @@ The system is designed around one core principle: **knowledge should work for yo
 
 ---
 
-## 🎯 Core Features
+## Core Features
 
 **Knowledge Capture** gives users a rich form to create knowledge items with required fields (title, content, type) and optional metadata including tags and source URLs. Items are timestamped and stored in PostgreSQL with a clean, indexed schema.
 
@@ -51,7 +51,7 @@ The system is designed around one core principle: **knowledge should work for yo
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology | Why This Choice |
 |-------|-----------|-----------------|
@@ -68,7 +68,7 @@ The system is designed around one core principle: **knowledge should work for yo
 
 ---
 
-## 🤖 AI Integration — Claude API by Anthropic
+## AI Integration — Claude API by Anthropic
 
 This project uses **Claude AI by Anthropic** for all AI-powered features, accessed via secure server-side API calls. Claude is one of the most capable and reliable large language models available, making it an ideal choice for tasks that require precise summarization, structured JSON output, and nuanced conversational reasoning.
 
@@ -86,7 +86,7 @@ The clean separation of this AI layer means the underlying model provider can be
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 second-brain/
@@ -130,7 +130,7 @@ The conversational Q&A feature uses a simplified Retrieval Augmented Generation 
 
 ---
 
-## 📡 Public API Reference
+## Public API Reference
 
 The public API endpoint allows external tools to query your knowledge base without authentication.
 
@@ -180,7 +180,7 @@ GET https://second-brain-frontend-engineering.vercel.app/api/public/brain/query?
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -229,7 +229,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. You should 
 
 ---
 
-## ☁️ Deployment
+## Deployment
 
 This project is deployed on Vercel with zero configuration required beyond environment variables.
 
@@ -257,7 +257,7 @@ Add these in your Vercel project under **Settings → Environment Variables**:
 
 ---
 
-## 🎨 UI/UX Design Principles
+## UI/UX Design Principles
 
 **Progressive Disclosure** — AI features are surfaced contextually at the point of creation, not buried in settings menus. Users discover summarization and auto-tagging naturally when they need them.
 
@@ -271,7 +271,7 @@ Add these in your Vercel project under **Settings → Environment Variables**:
 
 ---
 
-## 🗄 Database Schema
+## Database Schema
 
 ```sql
 CREATE TABLE knowledge_items (
@@ -292,7 +292,7 @@ The separation of `tags` (user-defined) and `ai_tags` (AI-generated) is an inten
 
 ---
 
-## 🔧 Development Notes
+## Development Notes
 
 **Environment variable changes require a full server restart.** Next.js reads `.env.local` once at startup, not on every request. After changing any variable, press `Ctrl+C` and run `npm run dev` again.
 
@@ -302,7 +302,7 @@ The separation of `tags` (user-defined) and `ai_tags` (AI-generated) is an inten
 
 ---
 
-## 📄 License
+## License
 
 MIT License — feel free to use this project as a reference or starting point for your own knowledge management tools.
 
