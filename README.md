@@ -17,6 +17,17 @@
 
 ---
 
+## Screenshots
+
+**Landing Page — Parallax hero with smooth scroll animations**
+![Landing Page](public/screenshots/landing.png)
+
+**Dashboard — Knowledge grid with AI summaries and type filters**
+![Dashboard](public/screenshots/dashboard.png)
+
+**AI Chat — Conversational Q&A with cited source attribution**
+![AI Chat](public/screenshots/ai-chat.png)
+
 > **Live Demo:** Visit [second-brain-frontend-engineering.vercel.app](https://second-brain-frontend-engineering.vercel.app) to see the full application in production.
 
 ---
